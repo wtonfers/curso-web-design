@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Bikcraft</title>
+  </head>
+
+  <body>
+    <h1>Bikcraft - Bicicletas Personalizadas</h1>
+
+    <!--A tag <form/> cria formulários com os atributos de
+    action (ação), method (método) e o name (nome do formulário)-->
+    <form action="enviar.php" method="POST" name="form">
+      <div>
+        <!--A tag <label/> seria o título do campo de texto com o atributo for (para o que ele serve)-->
+        <label for="nome">Nome *</label>
+        <!--A tag <input> serve como caixa de texto pequena com os atributos de
+        name (nome da caixa de texto), id (identificação da caixa), o type (o tipo de conteúdo) e o
+        required (obrigatoriedade de se preencher a caixa de texto)-->
+        <input name="nome" id="nome" type="text" required>
+      </div>
+      
+      <div>
+        <label for="email">E-mail *</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <p>Escolha a bicicleta</p>
+        <label for="passeio"><input name="passeio" id="passeio" type="checkbox">Passeio</label>
+        <label for="esporte"><input name="esporte" id="esporte" type="checkbox">Esporte</label>
+        <label for="retro"><input name="retro" id="retro" type="checkbox">Retrô</label>
+      </div>
+
+      <label for="mensagem">Mensagem</label>
+      <!--A tag <textarea/> é uma caixa de texto de várias linhas com os atributos
+      name (nome da caixa de texto), id (identificação da caixa), o cols (número de colunas)
+      e rows (número de linhas))-->
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+      <p>
+        <label for="unittype">Select unit types:</label>
+        <!--A tag <select/> é a caixa de seleção-->
+        <select id="unittype" name="unittype">
+          <!--A tag <option/> são as opções da caixa de seleção, o atributo value associa um valor-->
+         <option value="1"> Miner </option>
+         <option value="2"> Puffer </option>
+         <option value="3"> Snipey </option>
+         <option value="4"> Max </option>
+         <option value="5"> Firebot </option>
+        </select>
+       </p>
+
+      <div>
+        <!--A tag <button/> cria um botão e o atributo type fala o que ele vai fazer-->
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

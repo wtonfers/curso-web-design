@@ -1,0 +1,23 @@
+div {
+  margin: 40px auto;
+  width: 400px;
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+p {
+  color: #000;
+  font: normal bold 14px/20px Helvetica, Arial;
+  text-align: left;
+  text-transform: lowercase;
+  text-indent: 40px;
+  text-shadow: 1px 1px 10px green;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
